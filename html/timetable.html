@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeTable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/TimeTable.css">
+</head>
+<body>
+<div class="sidebar">
+    <ul>
+        <li>
+            <div class="sidebar-item">
+                <img src="../Images/ggg1.png" alt="Расписание">
+            <a href="#">Расписание</a>
+            </div>
+        </li>
+        <li>
+            <div class="sidebar-item">
+                <img src="../Images/bbbb1.png" alt="Аудитории">
+                <a href="#">Аудитории</a>
+            </div>
+        </li>
+        <li>
+            <div class="sidebar-item">
+                <img src="../Images/cccc1.png" alt="Оценки">
+                <a href="#">Оценки</a>
+            </div>
+        </li>
+        <li>
+            <div class="sidebar-item">
+                <img src="../Images/aaaa1.png" alt="Новости">
+                <a href="News.html">Новости</a>
+            </div>
+        </li>
+        <li>
+            <div class="sidebar-item">
+                <img src="../Images/llll1.png" alt="Пользователи">
+                <a href="timetable.html"><u>Пользователи</u></a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="search">
+    <input type="search" placeholder="Поиск">
+    <button type="submit">Найти</button>
+</div>
+
+<ul class="student-list">
+
+    <li>
+        <tab class="fio">ФИО
+            <a href="#" onclick="sortStudents()">
+                <img src="../Images/image2.png" alt="Картинка" id="sort-fio">
+            </a>
+        </tab>
+        <tab class="kateg">Группа
+            <a href="#" onclick="sortStudents()">
+                <img src="../Images/image2.png" alt="Картинка" id="sort-group">
+            </a>
+        </tab>
+        <tab class="tabun">Табельный номер
+            <a href="#" onclick="sortStudents()">
+                <img src="../Images/image2.png" alt="Картинка" id="sort-tab">
+            </a>
+        </tab>
+        <create>
+            <button id="add_student">Добавить</button>
+        </create>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+        <other>
+            <a href="#" onclick="sortStudents()">
+                <img src="../Images/Rectangle31.png" alt="Картинка" id="add">
+            </a>
+        </other>
+
+        <div id="menu" style="display:none;">
+            <ul>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Редактировать</a></li>
+            </ul>
+        </div>
+        <script>
+            var menuButton = document.getElementById("add");
+            var menu = document.getElementById("menu");
+
+            menuButton.addEventListener("click", function() {
+                if (menu.style.display === "none") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            });
+        </script>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+
+    <li>
+        <img src="../Images/photo.png" alt="Фото Иванова">
+        <a href="#">Лушин Вадим Андреевич</a>
+        <span class="group">УВП-211</span>
+        <tab class="tab">72820472628</tab>
+    </li>
+</ul>
+
+</body>
+</html>

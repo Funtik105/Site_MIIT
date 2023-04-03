@@ -1,0 +1,195 @@
+.sidebar {
+    width: 250px; /* задаем ширину боковой панели */
+    background-color: #163E73; /* закрашиваем боковую панель в синий цвет */
+    height: 100%; /* задаем высоту боковой панели на 100% */
+    position: fixed; /* устанавливаем позиционирование на фиксированное, чтобы панель не прокручивалась вместе со страницей */
+    left: 0; /* устанавливаем отступ слева на 0 */
+    top: 0; /* устанавливаем отступ сверху на 0 */
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.sidebar li a:hover {
+    color: #0e61af;
+}
+.sidebar-item img {
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+}
+.search {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.search input[type="search"] {
+    width: 88%;
+    height: 55px;
+    padding: 10px; /* отступы внутри поля ввода */
+    border: none; /* убираем границы */
+    border-radius: 9px; /* закругляем углы */
+    background-color: #F1F1F1; /* фоновый цвет */
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+.search button {
+    background-color: #163E73;
+    color: white;
+    border: none;
+    padding: 15px 16px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 9px; /* закругляем углы */
+    height: 55px;
+    width: 10%;
+}
+.search button:hover {
+    background-color: #0e61af;
+}
+.student-list {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin-left: 300px;
+    font-size: 100%;
+}
+
+.student-list li {
+    font-size: 22px;
+    line-height: 24px;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+}
+.student-list li a {
+    color: #000000;
+    text-decoration: none;
+}
+.student-list li a:hover{
+    color: #0e61af;
+}
+.student-list img {
+    vertical-align: middle;
+    padding-right: 50px;
+}
+.student-list other img {
+    float: right;
+}
+.student-list button {
+    height: 55px;
+    background-color: #163E73;
+    font-size: 22px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-radius: 9px; /* закругляем углы */
+    width: 10%;
+    float: right;
+    margin-top: -25px;
+    margin-right: 30px;
+}
+.student-list button:hover {
+    background-color: #0e61af;
+}
+.student-list li other img {
+    margin-left: 380px;
+    height: 50px;
+    width: 50px;
+}
+.group {
+    margin-left: 200px;
+    font-size: 22px;
+    text-align: left;
+}
+.tab{
+    margin-left: 200px;
+    font-size: 22px;
+}
+.kateg {
+    float: left;
+    margin-left: 250px;
+    text-align: left;
+}
+.fio {
+    margin-left: 168px;
+    font-size: 100%;
+    float: left;
+    text-align: left;
+
+}
+.fio img {
+    padding-right: 1px;
+}
+.tabun {
+    margin-left: 200px;
+    width: 10%;
+    font-size: 100%;
+}
+.tabun img {
+    padding-right: 0px;
+}
+.kateg img {
+    padding-right: 0px;
+}
+
+#menu {
+    border-radius: 9px; /* закругляем углы */
+    font-family: 'Lato', sans-serif;
+    position: absolute; /* Задаем позиционирование блока */
+    top: 235px; /* Отступ сверху */
+    right: 180px; /* Отступ справа */
+    background-color: #ffffff; /* Задаем цвет фона блока */
+    z-index: 1; /* Задаем индекс для позиционирования блока */
+    border: 1px solid #ccc; /* Задаем границу для блока */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#menu ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+#menu li a {
+    display: block; /* Задаем тип блока для ссылок */
+    color: #333; /* Задаем цвет текста для ссылок */
+    padding: 5px 10px; /* Задаем внутренний отступ для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px;
+    width: 115px;
+    height: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+#menu li a:hover {
+    color: #163E73;
+}
+@media (min-width: 768px) {
+    .student-list {
+        text-align: center;
+    }
+}
+
+
+
