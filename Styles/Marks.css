@@ -1,77 +1,96 @@
 .sidebar {
-    width: 250px; /* задаем ширину боковой панели */
-    background-color: #163E73; /* закрашиваем боковую панель в синий цвет */
-    height: 100%; /* задаем высоту боковой панели на 100% */
-    position: fixed; /* устанавливаем позиционирование на фиксированное, чтобы панель не прокручивалась вместе со страницей */
-    left: 0; /* устанавливаем отступ слева на 0 */
-    top: 0; /* устанавливаем отступ сверху на 0 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #163E73;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
 }
+
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .sidebar li {
-    padding: 10px;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: static;
+    left: auto;
+    right: auto;
+    font-size: 18px;
 }
 
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+
 .sidebar li a {
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.4s ease-in-out;
     display: block;
+    padding: 10px 1px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar li:hover {
+    background-color: #0e61af;
+    transition: all 0.5s ease-in-out;
 }
 
 .sidebar li a:hover {
-    background-color: #0e61af;
+    color: #fff;
 }
-.sidebar-item img {
-    width: 70px;
-    height: 70px;
-    margin-left: 0px;
-}
-.sidebar-item {
-    display: flex;
-    align-items: center;
+
+.sidebar li img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
 .search {
-    margin-left: 300px;
-    margin-top: 20px;
+    margin-left: 240px;
+    margin-top: 1px;
 }
 
 .search input[type="search"] {
     width: 88%;
-    height: 55px;
+    height: 50px;
     padding: 10px; /* отступы внутри поля ввода */
     border: none; /* убираем границы */
     border-radius: 9px; /* закругляем углы */
     background-color: #F1F1F1; /* фоновый цвет */
-    font-size: 22px;
+    font-size: 1.3vw;
     font-family: 'Lato', sans-serif;
 }
 .search button {
     background-color: #163E73;
+    height: 50px;
     color: white;
     border: none;
-    padding: 15px 16px;
-    font-size: 22px;
+    font-size: 1.3vw;
     cursor: pointer;
     border-radius: 9px; /* закругляем углы */
-    height: 55px;
     width: 10%;
 }
 .search button:hover {
     background-color: #0e61af;
+    transition: all 0.3s ease-in-out;
 }
+
 .accordion-header {
     font-family: 'Lato', sans-serif;
     border-radius: 9px; /* закругляем углы */
-    margin-left: 300px;
+    margin-left: 240px;
     height: 100%;
-    background-color: #eee;
+    background-color: #ffffff;
     padding: 10px;
     cursor: pointer;
     margin-top: 30px;
@@ -79,34 +98,62 @@
 
 .accordion-content {
     display: none;
-    padding: 10px;
-    margin-left: 400px;
+    padding: 0;
+    margin-left: 300px;
+    list-style: none;
+}
+.accordion-content img {
+    height: 15px;
+    width: 15px;
 }
 
 .accordion-header.active {
-    background-color: #ccc;
+    background-color: #ffffff;
 }
 
 .accordion-header.active + .accordion-content {
     display: block;
 }
-#teacher-info {
+.hidden {
+    display: none;
+}
+
+#teacher-info1, #teacher-info2 {
     font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     margin-top: 30px    ;
-    margin-left: 300px;
+    margin-left: 240px;
 }
 
-#teacher-info img {
+#teacher-info1 img, #teacher-info2 img {
     width: 100px;
-    height: 100px;
+    height: 120px;
     margin-right: 20px;
+    border-radius: 9px; /* закругляем углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-#teacher-info h2,
-#teacher-info p {
-    margin-left: 100px;
+#teacher-info1 a,
+#teacher-info1 p {
+    margin-left: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+#teacher-info2 a,
+#teacher-info2 p {
+    margin-left: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+#teacher-info1 a:hover {
+    color: #0e61af;
+}
+#teacher-info2 a:hover {
+    color: #0e61af;
 }
 .accordion-header h3 {
     display: flex;

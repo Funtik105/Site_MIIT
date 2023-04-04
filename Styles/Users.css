@@ -56,31 +56,73 @@
     height: 50px;
 }
 .search {
-    margin-left: 200px;
+    margin-left: 240px;
     margin-top: 1px;
-    height: 10%;
 }
 
 .search input[type="search"] {
     width: 88%;
-    height: 45px;
+    height: 50px;
     padding: 10px; /* отступы внутри поля ввода */
     border: none; /* убираем границы */
     border-radius: 9px; /* закругляем углы */
     background-color: #F1F1F1; /* фоновый цвет */
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: 'Lato', sans-serif;
 }
 .search button {
     background-color: #163E73;
+    height: 50px;
     color: white;
     border: none;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     cursor: pointer;
     border-radius: 9px; /* закругляем углы */
-    height: 45px;
     width: 10%;
 }
 .search button:hover {
     background-color: #0e61af;
+    transition: all 0.3s ease-in-out;
+}
+
+table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: separate;
+    width: 82%;
+    margin-left: 300px;
+    border-spacing: 0 20px;
+}
+
+
+th, td {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #0e61af;
+}
+
+@media screen and (min-width: 768px) {
+    th, td {
+        width: 10px;
+    }
+}
+
+
+th {
+    background-color: #ffffff;
+    color: #000000;
+}
+td img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
 }
