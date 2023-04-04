@@ -1,48 +1,86 @@
 .sidebar {
     position: fixed;
     top: 0;
-    left: -200px;
-    width: 200px;
-    height: 100%;
-    background-color: #163E73;
-    transition: left 0.3s ease-in-out;
-    font-family: 'Lato', sans-serif;
-}
-
-.sidebar.show {
     left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #163E73;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
 }
 
 .sidebar ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 50px 0 0 0;
 }
 
 .sidebar li {
-    margin: 10px 0;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: static;
+    left: auto;
+    right: auto;
+    font-size: 18px;
 }
 
-.sidebar a {
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+
+.sidebar li a {
     display: block;
+    padding: 10px 1px;
     color: #ffffff;
     text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.7s ease-in-out;
-    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.sidebar a:hover {
+.sidebar li:hover {
     background-color: #0e61af;
+    transition: all 0.5s ease-in-out;
 }
-.menu-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    background-color: #333;
+
+.sidebar li a:hover {
     color: #fff;
+}
+
+.sidebar li img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.search {
+    margin-left: 200px;
+    margin-top: 1px;
+    height: 10%;
+}
+
+.search input[type="search"] {
+    width: 88%;
+    height: 45px;
+    padding: 10px; /* отступы внутри поля ввода */
+    border: none; /* убираем границы */
+    border-radius: 9px; /* закругляем углы */
+    background-color: #F1F1F1; /* фоновый цвет */
+    font-size: 1.5vw;
+    font-family: 'Lato', sans-serif;
+}
+.search button {
+    background-color: #163E73;
+    color: white;
     border: none;
-    border-radius: 5px;
+    font-size: 1.5vw;
     cursor: pointer;
+    border-radius: 9px; /* закругляем углы */
+    height: 45px;
+    width: 10%;
+}
+.search button:hover {
+    background-color: #0e61af;
 }
