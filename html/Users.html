@@ -39,13 +39,43 @@
   </ul>
 </div>
 
+<ul id="menu" class="menu">
+  <div id="add-student-form">
+    <label for="name">ФИО:</label>
+    <input type="text" id="name" name="name"><br>
+    <label>Группа:</label>
+
+    <select id="student-group" name="student-group">
+      <option value="Группа 1">УВП-111</option>
+      <option value="Группа 2">УВП-112</option>
+      <option value="Группа 3">УВП-113</option>
+      <option value="Группа 4">УВП-211</option>
+      <option value="Группа 5">УВП-212</option>
+      <option value="Группа 5">УВП-213</option>
+      <option value="Группа 5">УВП-311</option>
+      <option value="Группа 5">УВП-312</option>
+      <option value="Группа 5">УВП-411</option>
+      <option value="Группа 5">УВП-412</option>
+    </select>
+
+    <label for="id"><br>Табельный номер:</label>
+    <input type="text" id="id" name="id"><br>
+    <label for="student-photo">Фото студента:</label>
+    <input type="file" id="student-photo" name="student-photo"><br>
+
+    <button type="submit">Сохранить</button>
+  </div>
+
+</ul>
+
 <div class="search">
   <input type="search" placeholder="Поиск">
   <button type="submit">Найти</button>
 </div>
 
+<div id="overlay"></div>
 
-<table>
+<table class="parent-element">
   <thead>
   <tr>
     <th>ID
@@ -93,6 +123,11 @@
       </div>
     </td>
   </tr>
+
+  <div class="add">
+    <button id="menu-button">Добавить</button>
+  </div>
+
   <tr>
     <td>2</td>
     <td>
@@ -240,6 +275,28 @@
       menuList.style.display = 'none';
     }
   });
+
+  var button = document.getElementById('menu-button');
+  var menu = document.getElementById('menu');
+
+  button.addEventListener('click', function() {
+    menu.parentNode.classList.toggle('show-menu');
+  });
+
+  const menuButton = document.getElementById('menu-button');
+  const parentElement = document.querySelector('.parent-element');
+  let isBlurApplied = false;
+
+  menuButton.addEventListener('click', function() {
+    if (isBlurApplied) {
+      parentElement.style.filter = '';
+      isBlurApplied = false;
+    } else {
+      parentElement.style.filter = 'blur(3px)';
+      isBlurApplied = true;
+    }
+  });
+
 </script>
 
 </body>
