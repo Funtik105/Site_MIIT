@@ -11,13 +11,13 @@ body {
     margin: 100px auto;
     background-color: #fff;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 h1 {
@@ -36,13 +36,13 @@ form {
     display: flex;
     flex-direction: column;
 }
-a {
+.opa_i {
     text-decoration: none;
     color: #949494;
     margin-top: 10px;
     font-size: 18px;
 }
-a:hover {
+.opa_i:hover {
     color: #0e61af;
     transition: background-color 0.3s linear;
 }
@@ -57,6 +57,7 @@ input[type="password"] {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     background-color: #F2F2F2;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 button[type="submit"] {
@@ -64,10 +65,10 @@ button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 9px;
-    background-color: #163E73;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    background-color: rgb(22, 62, 115);
 }
 
 button[type="submit"]:hover {
