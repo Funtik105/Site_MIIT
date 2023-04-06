@@ -151,7 +151,7 @@ a:hover {
     display: none;
     position: absolute;
     top: 150px;
-    right: 400px;
+    right: 540px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -196,7 +196,7 @@ a:hover {
     border-radius: 9px;
     cursor: pointer;
     width: 20%;
-    margin-left: 350px;
+    margin-left: 310px;
     margin-top: 10px;
 }
 

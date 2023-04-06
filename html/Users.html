@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="../Styles/Users.css">
 </head>
 <body>
+<!----------------------------------------------------------------------------------------------------------------------->
 <div class="sidebar">
   <ul>
-
     <li>
       <img src="../Images/aaaa1.png" alt="Расписание">
       <a href="#">Расписание</a>
@@ -38,7 +38,7 @@
     </li>
   </ul>
 </div>
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <ul id="menu" class="menu">
   <div id="add-student-form">
     <label for="name">ФИО:</label>
@@ -58,50 +58,51 @@
       <option value="Группа 5">УВП-412</option>
     </select>
 
-    <label for="id"><br>Табельный номер:</label>
-    <input type="text" id="id" name="id"><br>
+    <label for="tab"><br>Табельный номер:</label>
+    <input type="text" id="tab" name="tab"><br>
     <label for="student-photo">Фото студента:</label>
     <input type="file" id="student-photo" name="student-photo"><br>
 
-    <button type="submit">Сохранить</button>
+    <button id="done" type="submit">Сохранить</button>
   </div>
-
 </ul>
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <div class="search">
   <input type="search" placeholder="Поиск">
   <button type="submit">Найти</button>
 </div>
-
-<div id="overlay"></div>
-
-<table class="parent-element">
+<!----------------------------------------------------------------------------------------------------------------------->
+<table id="students-table" class="parent-element">
   <thead>
-  <tr>
-    <th>ID
-      <a href="#" onclick="sortStudents()">
-        <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
-      </a>
-    </th>
+    <tr>
+      <th>ID
+        <a href="#" onclick="sortStudents()">
+          <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+        </a>
+      </th>
 
-    <th>ФИО
-      <a href="#" onclick="sortStudents()">
-        <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
-      </a>
-    </th>
-    <th>Группа
-      <a href="#" onclick="sortStudents()">
-        <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
-      </a>
-    </th>
-    <th>Табельный номер
-      <a href="#" onclick="sortStudents()">
-        <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
-      </a>
-    </th>
+      <th>ФИО
+        <a href="#" onclick="sortStudents()">
+          <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+        </a>
+      </th>
+      <th>Группа
+        <a href="#" onclick="sortStudents()">
+          <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+        </a>
+      </th>
+      <th>Табельный номер
+        <a href="#" onclick="sortStudents()">
+          <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+        </a>
+      </th>
 
-  </tr>
+      <div class="add">
+        <button id="menu-button">Добавить</button>
+      </div>
+    </tr>
   </thead>
+  <!----------------------------------------------------------------------------------------------------------------------->
   <tbody>
   <tr>
     <td>1</td>
@@ -124,10 +125,6 @@
     </td>
   </tr>
 
-  <div class="add">
-    <button id="menu-button">Добавить</button>
-  </div>
-
   <tr>
     <td>2</td>
     <td>
@@ -140,6 +137,7 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
+
   <tr>
     <td>3</td>
     <td>
@@ -152,6 +150,7 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
+
   <tr>
     <td>4</td>
     <td>
@@ -164,6 +163,7 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
+
   <tr>
     <td>5</td>
     <td>
@@ -176,6 +176,7 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
+
   <tr>
     <td>6</td>
     <td>
@@ -188,6 +189,7 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
+
   <tr>
     <td>7</td>
     <td>
@@ -200,71 +202,11 @@
       <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
     </td>
   </tr>
-  <tr>
-    <td>8</td>
-    <td>
-      <img src="../Images/photo.png" alt="Фото студента" width="65" height="70">
-      <a href="#">Иванов Иван Иванович</a>
-    </td>
-    <td>УВП-211</td>
-    <td>12345643542</td>
-    <td>
-      <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
-    </td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>
-      <img src="../Images/photo.png" alt="Фото студента" width="65" height="70">
-      <a href="#">Иванов Иван Иванович</a>
-    </td>
-    <td>УВП-211</td>
-    <td>12345643542</td>
-    <td>
-      <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
-    </td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>
-      <img src="../Images/photo.png" alt="Фото студента" width="65" height="70">
-      <a href="#">Иванов Иван Иванович</a>
-    </td>
-    <td>УВП-211</td>
-    <td>12345643542</td>
-    <td>
-      <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
-    </td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>
-      <img src="../Images/photo.png" alt="Фото студента" width="65" height="70">
-      <a href="#">Иванов Иван Иванович</a>
-    </td>
-    <td>УВП-212</td>
-    <td>65432143534</td>
-    <td>
-      <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
-    </td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>
-      <img src="../Images/photo.png" alt="Фото студента" width="65" height="70">
-      <a href="#">Сидорова Анна Ивановна</a>
-    </td>
-    <td>УВП-213</td>
-    <td>78945635433</td>
-    <td>
-      <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
-    </td>
-  </tr>
   </tbody>
 </table>
-
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <script>
+  //---------------------------------------------------------------------------------------------------------------------
   const menuIcon = document.getElementById('menu-icon');
   const menuList = document.querySelector('.menu-list');
 
@@ -275,14 +217,14 @@
       menuList.style.display = 'none';
     }
   });
-
+  //---------------------------------------------------------------------------------------------------------------------
   var button = document.getElementById('menu-button');
   var menu = document.getElementById('menu');
 
   button.addEventListener('click', function() {
     menu.parentNode.classList.toggle('show-menu');
   });
-
+  //---------------------------------------------------------------------------------------------------------------------
   const menuButton = document.getElementById('menu-button');
   const parentElement = document.querySelector('.parent-element');
   let isBlurApplied = false;
@@ -296,7 +238,7 @@
       isBlurApplied = true;
     }
   });
-
+//---------------------------------------------------------------------------------------------------------------------
 </script>
 
 </body>
