@@ -26,6 +26,7 @@ h1 {
     color: #163E73;
     font-weight: normal;
 }
+
 h2 {
     color: #163E73;
     font-size: 20px;
@@ -36,12 +37,14 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 .opa_i {
     text-decoration: none;
     color: #949494;
     margin-top: 10px;
     font-size: 18px;
 }
+
 .opa_i:hover {
     color: #0e61af;
     transition: background-color 0.3s linear;
