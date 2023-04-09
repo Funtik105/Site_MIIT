@@ -1,0 +1,330 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #163E73;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: static;
+    left: auto;
+    right: auto;
+    font-size: 18px;
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+
+.sidebar li a {
+    display: block;
+    padding: 10px 1px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar li:hover {
+    background-color: #0e61af;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar li a:hover {
+    color: #fff;
+}
+
+.sidebar li img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.search {
+    margin-left: 240px;
+    margin-top: 1px;
+}
+
+.search input[type="search"] {
+    width: 88%;
+    height: 50px;
+    padding: 10px; /* отступы внутри поля ввода */
+    border: none; /* убираем границы */
+    border-radius: 9px; /* закругляем углы */
+    background-color: #F1F1F1; /* фоновый цвет */
+    font-size: 1.3vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.search button {
+    background-color: #163E73;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 1.3vw;
+    cursor: pointer;
+    border-radius: 9px; /* закругляем углы */
+    width: 10%;
+}
+
+.search button:hover {
+    background-color: #0e61af;
+    transition: all 0.3s ease-in-out;
+}
+.news {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-left: 240px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 9px; /* закругляем углы */
+    font-family: 'Lato', sans-serif;
+    height: 40%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.news h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news li {
+    width: 48.5%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px; /* закругляем углы */
+    height: 350px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.news li h3 {
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+.news li p {
+    font-size: 1.1vw;
+    line-height: 1.5;
+    margin-left: 400px;
+}
+
+#news {
+    float: right;
+    position: absolute;
+    right: 100px;
+
+}
+
+.news img {
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 48%;
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news button {
+    float: right;
+    border-radius: 9px; /* закругляем углы */
+    height: 20px;
+    width: 20px;
+    font-size: 1.1vw;
+    border: none;
+    cursor: pointer;
+    background-color: #163E73;
+    color: white;
+}
+#close {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.news button:hover {
+    background-color: #0e61af;
+}
+.status-non {
+    color: #ff1200;
+}
+.status-free {
+    color: #009d11;
+}
+.menu {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 800px;
+    z-index: 9999;
+    border-radius: 9px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 40%;
+    left: 55%;
+    transform: translate(-44%, -50%);
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        transform: scale(0.6); /* меню уменьшится на 40% на экранах шириной не более 768px */
+    }
+}
+
+#add-student-form {
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+}
+
+#add-student-form input[type=text] {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+#add-student-form button[type=submit] {
+    background-color: #163E73;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 310px;
+    margin-top: 10px;
+}
+
+#add-student-form button[type=submit]:hover {
+    background-color: #0e61af;
+    transition: all 0.3s ease-in-out;
+}
+
+select {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px 8px;
+    padding-right: 24px;
+    width: 96.5%;
+    height: 30px;
+    border-radius: 9px;
+    margin-top: 20px;
+}
+
+/* Стилизация опций */
+select option {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Стилизация при наведении на опцию */
+select option:hover {
+    background-color: #e2e2e2;
+}
+
+/* Стилизация при выборе опции */
+select option:checked {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+/* Стилизация при открытии списка */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0074d9;
+}
+.show-menu .menu {
+    display: block;
+}
+/* Стили для переключателя */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Стили для скрытия оригинального чекбокса */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стили для "слайдера" переключателя */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+
+}
+
+/* Стили для переключателя, когда он включен (checked) */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+
+}
+
+/* Стили для переключателя, когда он включен (checked) */
+input:checked + .slider {
+    background-color: #2196F3;
+
+}
+
+/* Стили для "слайдера" переключателя, когда он включен (checked) */
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
