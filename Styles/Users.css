@@ -149,9 +149,7 @@ a:hover {
 }
 .menu {
     display: none;
-    position: absolute;
-    top: 150px;
-    right: 540px;
+    position: fixed;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -160,6 +158,9 @@ a:hover {
     border-radius: 9px;
     text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 40%;
+    left: 55%;
+    transform: translate(-44%, -50%);
 }
 
 #add-student-form label {
@@ -178,6 +179,8 @@ a:hover {
 
 #add-student-form {
     transition: transform 0.3s ease-in-out;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
 }
 
 #add-student-form input[type=text] {
@@ -186,6 +189,7 @@ a:hover {
     margin-bottom: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 18px;
 }
 
 #add-student-form button[type=submit] {
