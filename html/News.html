@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>News</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Styles/News.css">
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/News.css">
 </head>
 <body>
+<!---------------------------------------------------------------------------------------------------------------------->
 <div class="sidebar">
-<ul>
+    <ul>
+        <li>
+            <img src="../Images/ggg1.png" alt="Расписание">
+            <a href="#">Расписание</a>
+        </li>
 
-  <li>
-    <img src="../Images/aaaa1.png" alt="Расписание">
-    <a href="#">Расписание</a>
-  </li>
+        <li>
+            <img src="../Images/cccc1.png" alt="Расписание">
+            <a href="Marks.html">Оценки</a>
+        </li>
 
-  <li>
-    <img src="../Images/bbbb1.png" alt="Расписание">
-    <a href="Marks.html">Оценки</a>
-  </li>
+        <li>
+            <img src="../Images/llll1.png" alt="Расписание">
+            <a href="Users.html">Пользователи</a>
+        </li>
 
-  <li>
-    <img src="../Images/aaaa1.png" alt="Расписание">
-    <a href="Users.html">Пользователи</a>
-  </li>
+        <li>
+            <img src="../Images/aaaa1.png" alt="Расписание">
+            <a href="News.html"><u>Новости</u></a>
+        </li>
 
-  <li>
-    <img src="../Images/aaaa1.png" alt="Расписание">
-    <a href="News.html"><u>Новости</u></a>
-  </li>
-
-  <li>
-    <img src="../Images/aaaa1.png" alt="Расписание">
-    <a href="#">Аудитории</a>
-  </li>
-</ul>
+        <li>
+            <img src="../Images/bbbb1.png" alt="Расписание">
+            <a href="Rooms.html">Аудитории</a>
+        </li>
+    </ul>
 </div>
 
 <div class="search">
-  <input type="search" placeholder="Поиск">
-  <button type="submit">Найти</button>
+    <input type="search" placeholder="Поиск">
+    <button type="submit">Найти</button>
 </div>
+<!---------------------------------------------------------------------------------------------------------------------->
+<ul id="menu" class="menu">
+    <div id="add-student-form">
+        <label for="name">Название</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="name">Описание</label>
+        <textarea rows="10" cols="75" style="font-size: 18px; border-radius: 9px;"></textarea>
 
-  <div class="news">
+        <label for="student-photo">Фото:</label>
+        <input type="file" id="student-photo" name="student-photo"><br>
+
+        <button rows="5" cols="50" id="done" type="submit">Сохранить</button>
+    </div>
+</ul>
+
+<div class="add">
+    <button id="menu-button">Добавить</button>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------->
+<div class="news">
     <h2>Новости</h2>
-    <button type="submit">Добавить</button>
     <ul>
-      <li>
-        <div class="news-image">
-          <img src="../Images/news.png" alt="News Image">
-        </div>
-        <h3>Внимание! Меняются реквизиты для оплаты образовательных услуг</h3>
-        <p>Федеральное государственное автономное образовательное учреждение высшего образования «Российский университет транспорта» «РУТ (МИИТ)» сообщает об изменении с 01.01.2023 года платежных реквизитов для оплаты образовательных услуг.</p>
-      </li>
-      <li>
-        <div class="news-image">
-          <img src="../Images/news2.png" alt="News Image">
-        </div>
-        <h3>9 февраля ДК РУТ (МИИТ) приглашает на музыкальный спектакль «Севастопольский вальс»</h3>
-        <p>9 февраля ДК РУТ (МИИТ) приглашает на музыкальный спектакль «Севастопольский вальс»</p>
-      </li>
+        <li>
+            <div class="news-image">
+                <img src="../Images/news.png" alt="News Image">
+            </div>
+            <h3>Внимание! Меняются реквизиты для оплаты образовательных услуг</h3>
+            <p>Федеральное государственное автономное образовательное учреждение высшего образования «Российский
+                университет транспорта» «РУТ (МИИТ)» сообщает об изменении с 01.01.2023 года платежных реквизитов для
+                оплаты образовательных услуг.</p>
+        </li>
+        <li>
+            <div class="news-image">
+                <img src="../Images/news2.png" alt="News Image">
+            </div>
+            <h3>9 февраля ДК РУТ (МИИТ) приглашает на музыкальный спектакль «Севастопольский вальс»</h3>
+            <p>9 февраля ДК РУТ (МИИТ) приглашает на музыкальный спектакль «Севастопольский вальс»</p>
+        </li>
 
     </ul>
-  </div>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------->
+<script>
+    //------------------------------------------------------------------------------------------------------------------
+    var button = document.getElementById('menu-button');
+    var menu = document.getElementById('menu');
+
+    button.addEventListener('click', function () {
+        menu.parentNode.classList.toggle('show-menu');
+    });
+    //------------------------------------------------------------------------------------------------------------------
+    const menuButton = document.getElementById('menu-button');
+    const parentElement = document.querySelector('.news');
+    let isBlurApplied = false;
+
+    menuButton.addEventListener('click', function () {
+        if (isBlurApplied) {
+            parentElement.style.filter = '';
+            isBlurApplied = false;
+        } else {
+            parentElement.style.filter = 'blur(3px)';
+            isBlurApplied = true;
+        }
+    });
+    //------------------------------------------------------------------------------------------------------------------
+</script>
 </body>
 </html>
