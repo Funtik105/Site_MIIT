@@ -3,238 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <title>Marks</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Styles/Marks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Marks.css">
 </head>
 <body>
+<!----------------------------------------------------------------------------------------------------------------------->
 <div class="sidebar">
-  <ul>
+    <ul>
+        <li>
+            <img src="../Images/ggg1.png" alt="Расписание">
+            <a href="#">Расписание</a>
+        </li>
 
-    <li>
-      <img src="../Images/aaaa1.png" alt="Расписание">
-      <a href="#">Расписание</a>
-    </li>
+        <li>
+            <img src="../Images/cccc1.png" alt="Расписание">
+            <a href="Marks.html"><u>Оценки</u></a>
+        </li>
 
-    <li>
-      <img src="../Images/bbbb1.png" alt="Расписание">
-      <a href="#"><u>Оценки</u></a>
-    </li>
+        <li>
+            <img src="../Images/llll1.png" alt="Расписание">
+            <a href="Users.html">Пользователи</a>
+        </li>
 
-    <li>
-      <img src="../Images/aaaa1.png" alt="Расписание">
-      <a href="Users.html">Пользователи</a>
-    </li>
+        <li>
+            <img src="../Images/aaaa1.png" alt="Расписание">
+            <a href="News.html">Новости</a>
+        </li>
 
-    <li>
-      <img src="../Images/aaaa1.png" alt="Расписание">
-      <a href="News.html">Новости</a>
-    </li>
-
-    <li>
-      <img src="../Images/aaaa1.png" alt="Расписание">
-      <a href="#">Аудитории</a>
-    </li>
-  </ul>
+        <li>
+            <img src="../Images/bbbb1.png" alt="Расписание">
+            <a href="Rooms.html">Аудитории</a>
+        </li>
+    </ul>
 </div>
 
 <div class="search">
-  <input type="search" placeholder="Поиск">
-  <button type="submit">Найти</button>
+    <input type="search" placeholder="Поиск">
+    <button type="submit">Найти</button>
 </div>
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <div id="teacher-info1">
-  <img src="../Images/gotod.jpg" alt="Фото преподавателя">
-  <h2 id="teacher-name"><a href="#">Городников Александр Игорьевич</a></h2>
-  <p>Табельный номер: 981779</p>
+    <img src="../Images/gotod.jpg" alt="Фото преподавателя">
+    <h2 id="teacher-name"><a href="#">Городников Александр Игорьевич</a></h2>
+    <p>Табельный номер: 981779</p>
 </div>
 
 <div class="accordion hidden">
-  <div class="accordion">
-    <div class="accordion-header">
-      <h3>
-        <img src="../Images/image10.png" class="icon111" id="photo" onclick="toggleAccordion(this)">
-        Цифровые технологии
-      </h3>
+    <div class="accordion">
+        <div class="accordion-header">
+            <h3>
+                <img src="../Images/image10.png" class="icon111" id="photo" onclick="toggleAccordion(this)">
+                Цифровые технологии
+            </h3>
+        </div>
+
+        <div class="accordion-content">
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-211
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-212
+            </p>
+
+            <p><img src="../Images/image10.png" class="icon">
+                УВП-213
+            </p>
+        </div>
+
+        <div class="accordion-header">
+
+            <h3>
+                <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
+                Программированием
+            </h3>
+
+        </div>
+        <div class="accordion-content">
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-111
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-112
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-113
+            </p>
+
+        </div>
+
+        <div class="accordion-header">
+
+            <h3>
+                <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
+                Технологии хранения данных
+            </h3>
+
+        </div>
+        <div class="accordion-content">
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-311
+            </p>
+
+            <p><img src="../Images/image10.png" class="icon">
+                УВП-312
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-313
+            </p>
+
+        </div>
     </div>
-
-  <div class="accordion-content">
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-211
-    </p>
-
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-212
-    </p>
-
-    <p><img src="../Images/image10.png" class="icon">
-      УВП-213
-    </p>
-  </div>
-
-  <div class="accordion-header">
-
-    <h3>
-      <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
-      Программированием
-    </h3>
-
-  </div>
-  <div class="accordion-content">
-
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-111
-    </p>
-
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-112
-    </p>
-
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-113
-    </p>
-
-  </div>
-
-  <div class="accordion-header">
-
-    <h3>
-      <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
-      Технологии хранения данных
-    </h3>
-
-  </div>
-  <div class="accordion-content">
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-311
-    </p>
-
-    <p><img src="../Images/image10.png" class="icon">
-      УВП-312
-    </p>
-
-    <p>
-      <img src="../Images/image10.png" class="icon">
-      УВП-313
-    </p>
-
-  </div>
 </div>
-</div>
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <div id="teacher-info2">
-  <img src="../Images/zamanov.jpg" alt="Фото преподавателя">
-  <h2 id="teacher-name1"><a href="#">Заманов Евгений Альбертович</a></h2>
-  <p>Табельный номер: 78893</p>
+    <img src="../Images/zamanov.jpg" alt="Фото преподавателя">
+    <h2 id="teacher-name1"><a href="#">Заманов Евгений Альбертович</a></h2>
+    <p>Табельный номер: 78893</p>
 </div>
 
 <div class="accordion hidden">
-  <div class="accordion">
-    <div class="accordion-header">
-      <h3>
-        <img src="../Images/image10.png" class="icon111">
-        Цифровые технологии
-      </h3>
+    <div class="accordion">
+        <div class="accordion-header">
+            <h3>
+                <img src="../Images/image10.png" class="icon111">
+                Цифровые технологии
+            </h3>
+        </div>
+
+        <div class="accordion-content">
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-211
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-212
+            </p>
+
+            <p><img src="../Images/image10.png" class="icon">
+                УВП-213
+            </p>
+        </div>
+
+        <div class="accordion-header">
+
+            <h3>
+                <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
+                Программированием
+            </h3>
+
+        </div>
+        <div class="accordion-content">
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-111
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-112
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-113
+            </p>
+
+        </div>
+
+        <div class="accordion-header">
+
+            <h3>
+                <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
+                Технологии хранения данных
+            </h3>
+
+        </div>
+        <div class="accordion-content">
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-311
+            </p>
+
+            <p><img src="../Images/image10.png" class="icon">
+                УВП-312
+            </p>
+
+            <p>
+                <img src="../Images/image10.png" class="icon">
+                УВП-313
+            </p>
+
+        </div>
     </div>
-
-    <div class="accordion-content">
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-211
-      </p>
-
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-212
-      </p>
-
-      <p><img src="../Images/image10.png" class="icon">
-        УВП-213
-      </p>
-    </div>
-
-    <div class="accordion-header">
-
-      <h3>
-        <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
-        Программированием
-      </h3>
-
-    </div>
-    <div class="accordion-content">
-
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-111
-      </p>
-
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-112
-      </p>
-
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-113
-      </p>
-
-    </div>
-
-    <div class="accordion-header">
-
-      <h3>
-        <img src="../Images/image10.png" class="icon" onclick="rotateImage()">
-        Технологии хранения данных
-      </h3>
-
-    </div>
-    <div class="accordion-content">
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-311
-      </p>
-
-      <p><img src="../Images/image10.png" class="icon">
-        УВП-312
-      </p>
-
-      <p>
-        <img src="../Images/image10.png" class="icon">
-        УВП-313
-      </p>
-
-    </div>
-  </div>
 </div>
-
+<!----------------------------------------------------------------------------------------------------------------------->
 <script>
-  const teacherName = document.getElementById("teacher-name");
-  const accordion = document.querySelector(".accordion");
+    const teacherName = document.getElementById("teacher-name");
+    const accordion = document.querySelector(".accordion");
 
-  let isAccordionVisible = false;
+    let isAccordionVisible = false;
 
-  teacherName.addEventListener("click", () => {
-    isAccordionVisible = !isAccordionVisible;
-    accordion.style.display = isAccordionVisible ? "block" : "none";
-  });
-
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-  accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-      header.classList.toggle('active');
+    teacherName.addEventListener("click", () => {
+        isAccordionVisible = !isAccordionVisible;
+        accordion.style.display = isAccordionVisible ? "block" : "none";
     });
-  });
+    //------------------------------------------------------------------------------------------------------------------
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-
-
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            header.classList.toggle('active');
+        });
+    });
+    //------------------------------------------------------------------------------------------------------------------
 </script>
 
 </body>

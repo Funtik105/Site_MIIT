@@ -55,6 +55,7 @@
     width: 50px;
     height: 50px;
 }
+
 .search {
     margin-left: 240px;
     margin-top: 1px;
@@ -70,6 +71,7 @@
     font-size: 1.3vw;
     font-family: 'Lato', sans-serif;
 }
+
 .search button {
     background-color: #163E73;
     height: 50px;
@@ -80,6 +82,7 @@
     border-radius: 9px; /* закругляем углы */
     width: 10%;
 }
+
 .search button:hover {
     background-color: #0e61af;
     transition: all 0.3s ease-in-out;
@@ -103,6 +106,7 @@
     margin-left: 300px;
     list-style: none;
 }
+
 .accordion-content img {
     height: 15px;
     width: 15px;
@@ -115,6 +119,7 @@
 .accordion-header.active + .accordion-content {
     display: block;
 }
+
 .hidden {
     display: none;
 }
@@ -124,7 +129,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 30px    ;
+    margin-top: 30px;
     margin-left: 240px;
     background-color: #f6f6f6;
     border-radius: 9px;
@@ -137,6 +142,7 @@
     border-radius: 9px; /* закругляем углы */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 #teacher-info1 a,
 #teacher-info1 p {
     margin-left: 20px;
@@ -144,6 +150,7 @@
     text-decoration: none;
     color: black;
 }
+
 #teacher-info2 a,
 #teacher-info2 p {
     margin-left: 20px;
@@ -155,9 +162,11 @@
 #teacher-info1 a:hover {
     color: #0e61af;
 }
+
 #teacher-info2 a:hover {
     color: #0e61af;
 }
+
 .accordion-header h3 {
     display: flex;
     align-items: center;
