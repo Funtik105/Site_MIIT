@@ -87,93 +87,13 @@
     background-color: #0e61af;
     transition: all 0.3s ease-in-out;
 }
-.news {
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-left: 240px;
-    margin-right: 20px;
-    margin-top: 20px;
-    border-radius: 9px; /* закругляем углы */
-    font-family: 'Lato', sans-serif;
-    height: 40%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
-}
-
-.news h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    width: 40%;
-}
-
-.news ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.news li {
-    width: 98%;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 9px; /* закругляем углы */
-    height: 350px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-}
-
-.news li h3 {
-    font-size: 1.1vw;
-    font-weight: bold;
-}
-
-.news li p {
-    font-size: 1.1vw;
-    line-height: 1.5;
-}
-
-#news {
-    float: right;
-    position: absolute;
-    right: 100px;
-
-}
-
-.news img {
-    float: left;
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 40%;
-    height: 300px;
-    border-radius: 9px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-right: 15px;
-}
-
-.news button {
-    float: right;
-    border-radius: 9px; /* закругляем углы */
-    height: 20px;
-    width: 20px;
-    font-size: 1.1vw;
-    border: none;
-    cursor: pointer;
-    background-color: #163E73;
-    color: white;
-}
-#close {
+.close {
     height: 30px;
     width: 30px;
     float: right;
 }
 
-.news button:hover {
-    background-color: #0e61af;
-}
 .status-non {
     color: #ff1200;
 }
@@ -207,6 +127,11 @@
     font-family: 'Lato', sans-serif;
     font-size: 19px;
 }
+#menu-button {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
 
 #add-student-form input[type=text] {
     width: 95%;
@@ -227,6 +152,7 @@
     width: 20%;
     margin-left: 310px;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 #add-student-form button[type=submit]:hover {
@@ -238,7 +164,7 @@ select {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px 8px;
-    width: 95%;
+    width: 100%;
     border-radius: 9px;
     margin-top: 20px;
     font-size: 18px;
@@ -261,7 +187,7 @@ input[type="number"] {
     font-size: 18px;
     margin-top: 10px;
     border-radius: 9px;
-    width: 92.5%;
+    width: 97%;
     border: 1px solid #212121;
     padding: 10px;
 }
@@ -347,4 +273,58 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container {
+    margin-left: 230px;
+    margin-right: 20px;
+}
+
+.card {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.card p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.edit-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #163E73;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    font-size: 1.2rem;
 }

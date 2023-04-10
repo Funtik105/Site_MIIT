@@ -1,164 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Rooms</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Styles/Rooms.css">
+    <meta charset="UTF-8">
+    <title>Rooms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Rooms.css">
 </head>
 <body>
 <!---------------------------------------------------------------------------------------------------------------------->
 <div class="sidebar">
-  <ul>
-    <li>
-      <img src="../Images/ggg1.png" alt="Расписание">
-      <a href="#">Расписание</a>
-    </li>
+    <ul>
+        <li>
+            <img src="../Images/ggg1.png" alt="Расписание">
+            <a href="#">Расписание</a>
+        </li>
 
-    <li>
-      <img src="../Images/cccc1.png" alt="Расписание">
-      <a href="Marks.html">Оценки</a>
-    </li>
+        <li>
+            <img src="../Images/cccc1.png" alt="Расписание">
+            <a href="Marks.html">Оценки</a>
+        </li>
 
-    <li>
-      <img src="../Images/llll1.png" alt="Расписание">
-      <a href="Users.html">Пользователи</a>
-    </li>
+        <li>
+            <img src="../Images/llll1.png" alt="Расписание">
+            <a href="Users.html">Пользователи</a>
+        </li>
 
-    <li>
-      <img src="../Images/aaaa1.png" alt="Расписание">
-      <a href="News.html">Новости</a>
-    </li>
+        <li>
+            <img src="../Images/aaaa1.png" alt="Расписание">
+            <a href="News.html">Новости</a>
+        </li>
 
-    <li>
-      <img src="../Images/bbbb1.png" alt="Расписание">
-      <a href="Rooms.html"><u>Аудитории</u></a>
-    </li>
-  </ul>
+        <li>
+            <img src="../Images/bbbb1.png" alt="Расписание">
+            <a href="Rooms.html"><u>Аудитории</u></a>
+        </li>
+    </ul>
 </div>
 
 <div class="search">
-  <input type="search" placeholder="Поиск">
-  <button type="submit">Найти</button>
+    <input type="search" placeholder="Поиск">
+    <button type="submit">Найти</button>
 </div>
 
 <ul id="menu" class="menu">
-  <div id="add-student-form">
-    <a href="#">
-      <img src="../Images/kres.jpg" id="close">
-    </a>
+    <div id="add-student-form">
+        <a href="#">
+            <img src="../Images/kres.jpg" class="close">
+        </a>
 
-    <h4>Компьютерный класс</h4>
-    <label class="toggle-switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
+        <h4>Компьютерный класс</h4>
+        <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
 
-      <h4>Наличие проектора</h4>
-    <label class="toggle-switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
-
+        <h4>Наличие проектора</h4>
+        <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
         <h4>Наличие интерактивной доски</h4>
-    <label class="toggle-switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
+        <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
 
-    <select id="student-group" name="student-group">
-      <option value="Группа 1">Аудитория для лекций</option>
-      <option value="Группа 2">Аудитория для практических занатий</option>
-    </select>
-    <label for="time">Выберите время:</label>
-    <input type="time" id="time" name="time" min="8:00" max="21:00"><br><br>
-    <label>Количество мест:</label>
-    <input type="number" name="kol" id="seats"><br><br>
-    <label>Количество компьютеров</label>
-    <input type="number" name="kolk"><br>
-    <button id="done" type="submit">Сохранить</button>
-  </div>
+        <select id="student-group" name="student-group">
+            <option value="Группа 1">Аудитория для лекций</option>
+            <option value="Группа 2">Аудитория для практических занатий</option>
+        </select>
+        <label for="time">Выберите время:</label>
+        <input type="time" id="time" name="time" min="8:00" max="21:00"><br><br>
+        <label>Количество мест:</label>
+        <input type="number" name="kol" id="seats"><br><br>
+        <label>Количество компьютеров</label>
+        <input type="number" name="kolk"><br>
+        <button id="done" type="submit">Сохранить</button>
+    </div>
 </ul>
 
-<div class="news">
-  <h2>Расписание аудиторий</h2>
-  <ul>
-    <li>
-      <div class="news-image">
-        <img src="../Images/06.jpg" alt="News Image">
-      </div>
-      <h3>Аудитория 1308(1)</h3>
-      <button id="menu-button"></button>
-      <p>Наличие проектора: Да</p>
-      <p>Наличие интерактивной доски: Нет</p>
-      <p>Компьютерный класс: Нет</p>
-      <p>Количество мест: 30</p>
-      <p>Статус - <span class="status-free">Свободно</span></p>
-    </li>
-    <li>
-      <div class="news-image">
-        <img src="../Images/06.jpg" alt="News Image">
-      </div>
-      <h3>Аудитория 1318</h3>
-      <p>Наличие проектора: Да</p>
-      <p>Наличие интерактивной доски: Нет</p>
-      <p>Компьютерный класс: Да</p>
-      <p>Количество мест: 30</p>
-      <p>Статус - <span class="status-non">Занято до 10.05.2023</span></p>
-    </li>
-    <li>
-      <div class="news-image">
-        <img src="../Images/06.jpg" alt="News Image">
-      </div>
-      <h3>Аудитория 1318</h3>
-      <p>Наличие проектора: Да</p>
-      <p>Наличие интерактивной доски: Нет</p>
-      <p>Компьютерный класс: Да</p>
-      <p>Количество мест: 30</p>
-      <p>Статус - <span class="status-non">Занято до 10.05.2023</span></p>
-    </li>
-    <li>
-      <div class="news-image">
-        <img src="../Images/06.jpg" alt="News Image">
-      </div>
-      <h3>Аудитория 1318</h3>
-      <p>Наличие проектора: Да</p>
-      <p>Наличие интерактивной доски: Нет</p>
-      <p>Компьютерный класс: Да</p>
-      <p>Количество мест: 30</p>
-      <p>Статус - <span class="status-non">Занято до 10.05.2023</span></p>
-    </li>
-  </ul>
+<div class="card-container">
+    <div class="card">
+        <img src="../Images/06.jpg" alt="Image 1">
+        <h2>Аудитория 1318</h2>
+        <p>Наличие проектора: Да</p>
+        <p>Наличие интерактивной доски: Нет</p>
+        <p>Компьютерный класс: Да</p>
+        <p>Количество мест: 30</p>
+        <p>Статус - <span class="status-non">Занято до 10.05.2023</span></p>
+        <button class="edit-button">Изменить</button>
+    </div>
+    <div class="card">
+        <img src="../Images/06.jpg" alt="Image 2">
+        <h2>Аудитория 1318</h2>
+        <p>Наличие проектора: Да</p>
+        <p>Наличие интерактивной доски: Нет</p>
+        <p>Компьютерный класс: Да</p>
+        <p>Количество мест: 30</p>
+        <p>Статус - <span class="status-non">Занято до 10.05.2023</span></p>
+        <button class="edit-button">Изменить</button>
+    </div>
+    <div class="card">
+        <img src="../Images/06.jpg" alt="Image 3">
+        <h2>Аудитория 1318</h2>
+        <p>Наличие проектора: Да</p>
+        <p>Наличие интерактивной доски: Нет</p>
+        <p>Компьютерный класс: Да</p>
+        <p>Количество мест: 30</p>
+        <p>Статус - <span class="status-free">Свободно</span></p>
+        <button class="edit-button">Изменить</button>
+    </div>
+    <div class="card">
+        <img src="../Images/06.jpg" alt="Image 4">
+        <h2>Аудитория 1318</h2>
+        <p>Наличие проектора: Да</p>
+        <p>Наличие интерактивной доски: Нет</p>
+        <p>Компьютерный класс: Да</p>
+        <p>Количество мест: 30</p>
+        <p>Статус - <span class="status-free">Свободно</span></p>
+        <button class="edit-button">Изменить</button>
+    </div>
 </div>
 <script>
-  //---------------------------------------------------------------------------------------------------------------------
-  var button = document.getElementById('menu-button');
-  var menu = document.getElementById('menu');
-  var CloseButton = document.getElementById('close');
+    //---------------------------------------------------------------------------------------------------------------------
+    var button = document.querySelectorAll('.edit-button');
+    var menu = document.getElementById('menu');
+    var CloseButton = document.querySelectorAll('.close');
 
-  button.addEventListener('click', function () {
-    menu.parentNode.classList.toggle('show-menu');
-  })
-  button.addEventListener('click', function () {
-    CloseButton.parentNode.classList.toggle('show-menu');
-  });
-  //---------------------------------------------------------------------------------------------------------------------
-  const menuButton = document.getElementById('menu-button');
-  const parentElement = document.querySelector('.news');
-  let isBlurApplied = false;
 
-  menuButton.addEventListener('click', function () {
-    if (isBlurApplied) {
-      parentElement.style.filter = '';
-      isBlurApplied = false;
-    } else {
-      parentElement.style.filter = 'blur(3px)';
-      isBlurApplied = true;
-    }
-  });
-  //---------------------------------------------------------------------------------------------------------------------
+    button.forEach(button => {
+        button.addEventListener('click', function () {
+            menu.parentNode.classList.toggle('show-menu');
+        })
+    });
+    CloseButton.forEach(CloseButton => {
+        CloseButton.addEventListener('click', function () {
+            menu.parentNode.classList.toggle('show-menu');
+            if (isBlurApplied) {
+                parentElement.style.filter = '';
+                isBlurApplied = false;
+            }
+        })
+    });
+
+
+    //---------------------------------------------------------------------------------------------------------------------
+    const menuButton = document.querySelectorAll('.edit-button');
+    const parentElement = document.querySelector('.card-container');
+    let isBlurApplied = false;
+
+    menuButton.forEach(menuButton => {
+        menuButton.addEventListener('click', function () {
+            if (isBlurApplied) {
+                parentElement.style.filter = '';
+                isBlurApplied = false;
+            } else {
+                parentElement.style.filter = 'blur(3px)';
+                isBlurApplied = true;
+            }
+        });
+    });
+    //---------------------------------------------------------------------------------------------------------------------
 </script>
 </body>
 </html>
