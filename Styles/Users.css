@@ -97,6 +97,11 @@ table {
     margin-right: 100px;
     margin-top: 30px;
 }
+.close {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
 .add button {
     background-color: #163E73;
     color: white;

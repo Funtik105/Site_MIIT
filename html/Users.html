@@ -41,6 +41,9 @@
 <!----------------------------------------------------------------------------------------------------------------------->
 <ul id="menu" class="menu">
     <div id="add-student-form">
+        <a href="#">
+            <img src="../Images/kres.jpg" class="close" id="close">
+        </a>
         <label for="name">ФИО:</label>
         <input type="text" id="name" name="name"><br>
         <label>Группа:</label>
@@ -220,9 +223,17 @@
     //---------------------------------------------------------------------------------------------------------------------
     var button = document.getElementById('menu-button');
     var menu = document.getElementById('menu');
+    var CloseButton = document.getElementById('close');
 
     button.addEventListener('click', function () {
         menu.parentNode.classList.toggle('show-menu');
+    });
+    CloseButton.addEventListener('click', function () {
+        menu.parentNode.classList.toggle('show-menu');
+        if (isBlurApplied) {
+            parentElement.style.filter = '';
+            isBlurApplied = false;
+        }
     });
     //---------------------------------------------------------------------------------------------------------------------
     const menuButton = document.getElementById('menu-button');
