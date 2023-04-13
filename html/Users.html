@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>TimeTable</title>
+    <title>Users</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -39,37 +39,37 @@
     </ul>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
-<ul id="menu" class="menu">
-    <div id="add-student-form">
-        <a href="#">
-            <img src="../Images/kres.jpg" class="close" id="close">
-        </a>
-        <label for="name">ФИО:</label>
-        <input type="text" id="name" name="name"><br>
-        <label>Группа:</label>
+<!-- Контейнер Навбара-->
+<div class="sidebar">
+    <ul>
+        <li>
+            <img src="../Images/Timetable_icon.png" alt="Расписание">
+            <a href="Timetable.html">Расписание</a>
+        </li>
 
-        <select id="student-group" name="student-group">
-            <option value="Группа 1">УВП-111</option>
-            <option value="Группа 2">УВП-112</option>
-            <option value="Группа 3">УВП-113</option>
-            <option value="Группа 4">УВП-211</option>
-            <option value="Группа 5">УВП-212</option>
-            <option value="Группа 5">УВП-213</option>
-            <option value="Группа 5">УВП-311</option>
-            <option value="Группа 5">УВП-312</option>
-            <option value="Группа 5">УВП-411</option>
-            <option value="Группа 5">УВП-412</option>
-        </select>
+        <li>
+            <img src="../Images/Users_icon.png" alt="Расписание">
+            <a href="Users.html">Пользователи</a>
+        </li>
 
-        <label for="tab"><br>Табельный номер:</label>
-        <input type="text" id="tab" name="tab"><br>
-        <label for="student-photo">Фото студента:</label>
-        <input type="file" id="student-photo" name="student-photo"><br>
+        <li>
+            <img src="../Images/Audience_icon.png" alt="Расписание">
+            <a href="Rooms.html">Аудитории</a>
+        </li>
 
-        <button id="done" type="submit">Сохранить</button>
-    </div>
-</ul>
-<!----------------------------------------------------------------------------------------------------------------------->
+        <li>
+            <img src="../Images/News_icon.png" alt="Расписание">
+            <a href="News.html">Новости</a>
+        </li>
+
+        <li>
+            <img src="../Images/Marks_icon.png" alt="Расписание">
+            <a href="Marks.html"><u>Оценки</u></a>
+        </li>
+    </ul>
+</div>
+
+<!-- Контейнер Поиска-->
 <div class="search">
     <input type="search" placeholder="Поиск">
     <button type="submit">Найти</button>
