@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Timetable</title>
@@ -11,39 +11,165 @@
 <body>
 <!----------------------------------------------------------------------------------------------------------------------->
 <div class="sidebar">
-  <ul>
-    <li>
-      <img src="../Images/Timetable_icon.png" alt="Расписание">
-      <a href="Timetable.html">Расписание</a>
-    </li>
+    <ul>
+        <li>
+            <img src="../Images/Timetable_icon.png" alt="Расписание">
+            <a href="Timetable.html"><u>Расписание</u></a>
+        </li>
 
-    <li>
-      <img src="../Images/Users_icon.png" alt="Расписание">
-      <a href="Users.html">Пользователи</a>
-    </li>
+        <li>
+            <img src="../Images/Users_icon.png" alt="Расписание">
+            <a href="Users.html">Пользователи</a>
+        </li>
 
-    <li>
-      <img src="../Images/Audience_icon.png" alt="Расписание">
-      <a href="Rooms.html">Аудитории</a>
-    </li>
+        <li>
+            <img src="../Images/Audience_icon.png" alt="Расписание">
+            <a href="Rooms.html">Аудитории</a>
+        </li>
 
-    <li>
-      <img src="../Images/News_icon.png" alt="Расписание">
-      <a href="News.html">Новости</a>
-    </li>
+        <li>
+            <img src="../Images/News_icon.png" alt="Расписание">
+            <a href="News.html">Новости</a>
+        </li>
 
-    <li>
-      <img src="../Images/Marks_icon.png" alt="Расписание">
-      <a href="Marks.html"><u>Оценки</u></a>
-    </li>
-  </ul>
+        <li>
+            <img src="../Images/Marks_icon.png" alt="Расписание">
+            <a href="Marks.html">Оценки</a>
+        </li>
+    </ul>
 </div>
 
 <div class="search">
-  <input type="search" placeholder="Поиск">
-  <button type="submit">Найти</button>
+    <input type="search" placeholder="Поиск">
+    <button type="submit">Найти</button>
 </div>
+<!----------------------------------------------------------------------------------------------------------------------->
+<table id="time-table" class="parent-element">
+    <thead>
+    <tr>
+        <th>ID
+            <a href="#" onclick="sortTable()">
+                <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+            </a>
+        </th>
 
+        <th>Номер
+            <a href="#" onclick="sortTable()">
+                <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+            </a>
+        </th>
+        <th>Тип
+            <a href="#" onclick="sortTable()">
+                <img src="../Images/image2.png" alt="Фото студента" width="15" height="15">
+            </a>
+        </th>
+        <div class="add">
+            <button id="menu-button">Добавить</button>
+            <button id="filtr-button">Фильтры</button>
+        </div>
+    </tr>
+    </thead>
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>
+            <a href="#">1307</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <div class="menu-container">
+                <a href="#">
+                    <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40" id="menu-icon">
+                </a>
+                <ul class="menu-list">
+                    <li><a href="#">Изменить</a></li>
+                    <li><a href="#">Удалить</a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <tr>
+        <td>2</td>
+        <td>
+            <a href="#">1308</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>
+            <a href="#">1309</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>
+            <a href="#">1310</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>
+            <a href="#">1311</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>
+            <a href="#">1312</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>
+            <a href="#">1313</a>
+        </td>
+        <td>Лекционная</td>
+        <td>
+            <img src="../Images/Rectangle31.png" alt="sort" height="40" width="40">
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!----------------------------------------------------------------------------------------------------------------------->
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const menuList = document.querySelector('.menu-list');
+
+    menuIcon.addEventListener('click', function () {
+        if (menuList.style.display === 'none') {
+            menuList.style.display = 'block';
+        } else {
+            menuList.style.display = 'none';
+        }
+    });
+</script>
 
 </body>
 </html>
