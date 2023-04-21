@@ -10,60 +10,31 @@
 </head>
 <body>
 <!----------------------------------------------------------------------------------------------------------------------->
-<div class="sidebar">
-    <ul>
-        <li>
-            <img src="../Images/Timetable_icon.png" alt="Расписание">
-            <a href="Timetable.html">Расписание</a>
-        </li>
-
-        <li>
-            <img src="../Images/Users_icon.png" alt="Расписание">
-            <a href="Users.html">Пользователи</a>
-        </li>
-
-        <li>
-            <img src="../Images/Audience_icon.png" alt="Расписание">
-            <a href="Rooms.html">Аудитории</a>
-        </li>
-
-        <li>
-            <img src="../Images/News_icon.png" alt="Расписание">
-            <a href="News.html">Новости</a>
-        </li>
-
-        <li>
-            <img src="../Images/Marks_icon.png" alt="Расписание">
-            <a href="Marks.html"><u>Оценки</u></a>
-        </li>
-    </ul>
-</div>
-<!----------------------------------------------------------------------------------------------------------------------->
 <!-- Контейнер Навбара-->
 <div class="sidebar">
     <ul>
         <li>
-            <img src="../Images/Timetable_icon.png" alt="Расписание">
+            <img src="../Images/Timetable_icon.png" alt="Timetable">
             <a href="Timetable.html">Расписание</a>
         </li>
 
         <li>
-            <img src="../Images/Users_icon.png" alt="Расписание">
+            <img src="../Images/Users_icon.png" alt="Users">
             <a href="Users.html">Пользователи</a>
         </li>
 
         <li>
-            <img src="../Images/Audience_icon.png" alt="Расписание">
+            <img src="../Images/Audience_icon.png" alt="Rooms">
             <a href="Rooms.html">Аудитории</a>
         </li>
 
         <li>
-            <img src="../Images/News_icon.png" alt="Расписание">
+            <img src="../Images/News_icon.png" alt="News">
             <a href="News.html">Новости</a>
         </li>
 
         <li>
-            <img src="../Images/Marks_icon.png" alt="Расписание">
+            <img src="../Images/Marks_icon.png" alt="Marks">
             <a href="Marks.html"><u>Оценки</u></a>
         </li>
     </ul>
@@ -75,6 +46,37 @@
     <button type="submit">Найти</button>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------->
+
+<!--Add button: hover-->
+<ul id="menu" class="menu">
+    <div id="add-student-form">
+        <a href="#">
+            <img src="../Images/kres.jpg" class="close" id="close">
+        </a>
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name"><br>
+        <label>Группа:</label>
+        <select id="student-group" name="student-group">
+            <option value="Группа 1">УВП-111</option>
+            <option value="Группа 2">УВП-112</option>
+            <option value="Группа 3">УВП-113</option>
+            <option value="Группа 4">УВП-211</option>
+            <option value="Группа 5">УВП-212</option>
+            <option value="Группа 5">УВП-213</option>
+            <option value="Группа 5">УВП-311</option>
+            <option value="Группа 5">УВП-312</option>
+            <option value="Группа 5">УВП-411</option>
+            <option value="Группа 5">УВП-412</option>
+        </select>
+        <label for="tab"><br>Табельный номер:</label>
+        <input type="text" id="tab" name="tab"><br>
+        <label for="student-photo">Фото студента:</label>
+        <input type="file" id="student-photo" name="student-photo"><br>
+        <button id="done" type="submit">Сохранить</button>
+    </div>
+</ul>
+
+<!--Table on page-->
 <table id="students-table" class="parent-element">
     <thead>
     <tr>
