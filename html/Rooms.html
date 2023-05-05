@@ -23,9 +23,9 @@
             <a href="Users.html">Пользователи</a>
         </li>
 
-        <li>
+        <li style="background-color: #0e61af;">
             <img src="../Images/Audience_icon.png" alt="Rooms">
-            <a href="Rooms.html"><u>Аудитории</u></a>
+            <a href="Rooms.html">Аудитории</a>
         </li>
 
         <li>
@@ -43,7 +43,7 @@
 <!-- Контейнер Поиска-->
 <div class="search">
     <input type="search" placeholder="Поиск">
-    <button type="submit">Найти</button>
+    <button type="submit" onclick="notifSet ()">Найти</button>
 </div>
 
 <ul id="menu" class="menu">
@@ -164,6 +164,28 @@
             }
         });
     });
+
+    function notifyMe () {
+        var notification = new Notification("Все еще работаешь?", {
+            tag: "ache-mail",
+            body: "Пора сделать паузу и отдохнуть",
+            icon: "https://itproger.com/img/notify.png"
+        });
+    }
+        function notifSet () {
+            if (!("Notificatipn" in window))
+                alert("Ваш браузер не подперживает уведомления.");
+            else if (Notification.permission === "granted")
+                setTimeout(notifyMe, 2000);
+            else if (Notification.permission !== "denied") {
+                Notification.requestPermission(function (permission) {
+                    if (!('permission' in Notification))
+                        Notification.permission = permission;
+                    if (permission === "granted")
+                        setTimeout(notifyMe, 2000);
+                });
+            }
+        }
     //---------------------------------------------------------------------------------------------------------------------
 </script>
 </body>
